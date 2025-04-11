@@ -1,0 +1,231 @@
+import React, { useState, useEffect } from "react";
+import Card from "./components/Card";
+
+const App = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  // Define card data with gradients and course content
+  const cards = [
+    {
+      id: "apt1",
+      color: "#ef4444",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #ff416c, #ff4b2b)",
+      title: "2BHK in Pune",
+      description:
+        "Spacious 2BHK apartment in Kothrud, close to markets, schools, and metro. Semi-furnished with modern amenities.",
+      price: "₹42,00,000",
+      duration: "950 sq.ft",
+    },
+    {
+      id: "apt2",
+      color: "#3b82f6",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #5ee7df, #3b82f6)",
+      title: "1BHK in Mumbai",
+      description:
+        "Compact 1BHK flat in Andheri East, ideal for working professionals. Gated society with 24x7 security.",
+      price: "₹89,00,000",
+      duration: "600 sq.ft",
+    },
+    {
+      id: "apt3",
+      color: "#22c55e",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
+      title: "3BHK in Bangalore",
+      description:
+        "Luxurious 3BHK apartment in Whitefield with clubhouse, pool, and green views. Ideal for families.",
+      price: "₹1,25,00,000",
+      duration: "1450 sq.ft",
+    },
+    {
+      id: "apt4",
+      color: "#eab308",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #f6d365, #fda085)",
+      title: "Studio in Hyderabad",
+      description:
+        "Fully furnished studio flat in Gachibowli. Perfect for singles or startup professionals. Ready to move in.",
+      price: "₹38,00,000",
+      duration: "450 sq.ft",
+    },
+    {
+      id: "apt5",
+      color: "#8b5cf6",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #c084fc, #8b5cf6)",
+      title: "2BHK in Chennai",
+      description:
+        "Modern 2BHK apartment in Velachery with smart home features and easy access to IT parks.",
+      price: "₹55,00,000",
+      duration: "880 sq.ft",
+    },
+    {
+      id: "apt6",
+      color: "#0ea5e9",
+      gradient: "linear-gradient(135deg, #fff5f5, #ffdddd)",
+      bgGradient: "linear-gradient(135deg, #38bdf8, #0ea5e9)",
+      title: "1RK in Delhi",
+      description:
+        "Affordable 1 Room Kitchen unit in Laxmi Nagar, ideal for students and bachelors. Excellent connectivity.",
+      price: "₹22,00,000",
+      duration: "350 sq.ft",
+    },
+  ];
+
+  useEffect(() => {
+    // Set initial window height
+    setWindowHeight(window.innerHeight);
+
+    // Handle scroll events
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    // Handle resize events
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    // Add event listeners
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listeners
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Calculate values for card visibility and positioning
+  const start = windowHeight; // after intro
+  const step = windowHeight / cards.length;
+  const lastCardTrigger = start + step * (cards.length - 1);
+
+  // Determine active background gradient
+  let activeBgGradient = "linear-gradient(135deg, #f8fafc, #f1f5f9)"; // Default light gradient
+  cards.forEach((card, index) => {
+    const trigger = start + step * index;
+    if (scrollY > trigger) {
+      activeBgGradient = card.bgGradient;
+    }
+  });
+
+  // Determine container positioning
+  const containerStyle = {
+    position: scrollY > lastCardTrigger + 100 ? "relative" : "sticky",
+  };
+
+  // Define card and box dimensions
+  const cardWidth = 320; // 80*4 = 320px
+  const cardHeight = 220; // Increased height to accommodate additional content
+  const boxWidth = cardWidth * 2;
+  const boxHeight = cardHeight * 2;
+
+  // ... (imports and code remain same above)
+
+  return (
+    <div className="bg-gray-100">
+      {/* Scrollable content area */}
+      <div className="h-[400vh] relative">
+        {/* Sticky area to show cards */}
+        <div
+          id="stickyContainer"
+          className="top-0 h-screen flex flex-col items-center justify-center"
+          style={containerStyle}
+        >
+          {/* Section Heading */}
+          <h1 className="text-3xl font-bold text-gray-800 mb-6">
+            Explore Our Featured Properties
+          </h1>
+
+          {/* Box container with changing background */}
+          <div
+            className="rounded-xl shadow-xl flex items-center justify-center overflow-hidden"
+            style={{
+              width: `${boxWidth}px`,
+              height: `${boxHeight}px`,
+              background: activeBgGradient,
+              transition: "background 0.5s ease",
+            }}
+          >
+            {/* Cards container */}
+            <div
+              className="relative"
+              style={{ width: `${cardWidth}px`, height: `${cardHeight}px` }}
+            >
+              {cards.map((card, index) => {
+                const trigger = start + step * index;
+                const isVisible = scrollY > trigger;
+
+                return (
+                  <Card
+                    key={card.id}
+                    isVisible={isVisible}
+                    index={index}
+                    totalCards={cards.length}
+                    cardData={card}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+import React from "react";
+
+const Card = ({ isVisible, index, totalCards, cardData }) => {
+  // Calculate the offset position for each card
+  const offset = isVisible ? (totalCards - 1 - index) * -10 : 0;
+
+  return (
+    <div
+      id={cardData.id}
+      className="absolute text-black flex items-center justify-center rounded-xl shadow-xl"
+      style={{
+        background: cardData.gradient,
+        zIndex: 10 + index * 10,
+        transition:
+          "transform 0.6s ease, opacity 0.6s ease, box-shadow 0.6s ease",
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? `translateY(${offset}px)` : "translateY(100%)",
+        top: 0,
+        left: 0,
+        right: 0,
+        height: "250px",
+        boxShadow: isVisible
+          ? "0 10px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05)"
+          : "0 0 0 rgba(0,0,0,0)",
+      }}
+    >
+      <div className="flex flex-col items-center w-full px-6">
+        <h2 className="text-2xl font-bold mb-2">{cardData.title}</h2>
+        <div className="h-1 w-16 bg-black opacity-60 rounded-full mb-3"></div>
+
+        <p className="text-sm text-center mb-4 opacity-90">
+          {cardData.description}
+        </p>
+
+        <div className="flex justify-between w-full items-center">
+          <span className="text-xl font-bold">{cardData.price}</span>
+          <span className="bg-white text-sm px-3 py-1 rounded-full text-gray-800 font-medium">
+            {cardData.duration}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
