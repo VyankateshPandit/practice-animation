@@ -1,8 +1,5 @@
 import React from "react";
 import "./Bootcamp.css";
-import img1 from "../../assets/canadaFlag.svg";
-import img2 from "../../assets/bootCampCardImage.svg";
-import img3 from "../../assets/usaFlag.svg";
 
 const data = [
   {
