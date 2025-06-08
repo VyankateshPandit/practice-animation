@@ -1,0 +1,58 @@
+@media (max-width: 767.99px) {
+    .our-journey-container .our-journey{
+        background: linear-gradient(to right,#F4E5F0, #E536AB, #5C03BC, #0E0725);
+    }
+
+    .our-journey-container .journey{
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+        box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.08), 10px 10px 40px 0px rgba(0, 0, 0, 0.06) inset;
+        border-image: linear-gradient(to right, #0E0725, #5C03BC, #E536AB, #F4E5F0);
+        border-image-slice: 1;
+    }
+    .our-journey-container .p1, .p2, .p3, .p4, .p5, .p6, .p7{
+        position: absolute;
+    } 
+
+    .our-journey-container .p1{
+        left: 45%;
+        bottom: 100%;
+    }
+
+    .our-journey-container .p2{
+        left: 60%;
+        top: -17px;
+        transform: rotate(17deg);
+    }
+
+    .our-journey-container .p3{
+        left: 74%;
+        top: 9px;
+        transform: rotate(35deg);
+    }
+
+    .our-journey-container .p4{
+        left: 85.5%;
+        top: 48px;
+        transform: rotate(50deg);
+    }
+
+    .our-journey-container .p5{
+        left: 93%;
+        top: 101px;
+        transform: rotate(66deg);
+        right: -17px;
+    }
+
+    .our-journey-container .p6{
+        left: 97.5%;
+        top: 153px;
+        right: -30px;
+        transform: rotate(81deg);
+    }
+
+    .our-journey-container .p7{
+        left: 98.5%;
+        top: 210px;
+        transform: rotate(100deg);
+    }
+}

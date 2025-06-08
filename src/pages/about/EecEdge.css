@@ -1,0 +1,126 @@
+@media (max-width: 767.99px) {
+/* Wrapper styling */
+.eec-edge-wrapper {
+  width: 100%;
+  padding: 80px 20px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Section heading */
+.eec-edge-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.eec-edge-heading h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #323232;
+  margin-bottom: 16px;
+}
+
+.eec-edge-heading p {
+  font-size: 16px;
+  color: #5b5b5b;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Stacked card container */
+.eec-stacked-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Individual card */
+.eec-edge-card {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 24px 16px; /* smaller padding */
+  border-radius: 12px;
+  width: 90%; /* slightly narrower */
+  max-width: 640px; /* down from 720px */
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+
+  /* vertical centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px; /* slightly shorter */
+  text-align: center;
+}
+
+/* Icon circle */
+.eec-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eec-icon-inner {
+  width: 38px; 
+  height: 38px;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eec-icon-svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.eec-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical alignment of text block */
+  gap: 8px;
+}
+
+/* Card content */
+.eec-card-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.eec-card-text p {
+  font-size: 16px;
+  color: #5B5B5B;
+  line-height: 24px;
+}
+}
+
+@media (max-width: 768px) {
+  .eec-edge-card {
+    padding: 24px 16px;
+  }
+
+  .eec-card-text h3 {
+    font-size: 18px;
+  }
+
+  .eec-card-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eec-icon-inner {
+    width: 30px;
+    height: 30px;
+  }
+}

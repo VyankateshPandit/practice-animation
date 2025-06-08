@@ -1,0 +1,90 @@
+@media (max-width: 767.99px) {
+.section7 {
+    background: var(--Brand-Colors-White-white-50, #fefefe);
+    z-index: 1;
+  }
+  .section7 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 88%; /* Full width of the container */
+    min-width: 65%;
+    height: auto;
+    padding: 12px;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+    /* width: calc(100% - 32px); */
+    border-radius: 8px;
+    border: 1.5px solid var(--Purpule-Gradient, #392d69);
+    background: linear-gradient(
+      213deg,
+      rgba(57, 45, 105, 0.1) -8.37%,
+      rgba(181, 123, 238, 0.1) 111.65%
+    );
+    box-shadow: 3px 5px 14px 0px rgba(0, 0, 0, 0.17);
+    backdrop-filter: blur(20px);
+    margin: 0 auto 32px auto;
+  }
+  .section7 .content .heading-and-text .heading {
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    font-family: "GT Walsheim Trial";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.3mm;
+  }
+  .gradient-text {
+    background: linear-gradient(
+      90deg,
+      #0e0725 0%,
+      #5c03bc 38.12%,
+      #e536ab 77.96%,
+      #f4e5f0 116.42%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback for background-clip */
+    font-family: "GT Walsheim Trial";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+    text-align: center;
+    letter-spacing: 0.3mm;
+  }
+  .section7 .content .text {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: 16px;
+  }
+  .section7 .btn {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: var(--Brand-Colors-Grey-grey-500, #323232);
+    color: white; /* optional, adjust as needed */
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  /* Optional: Hover effect */
+  .flex-button:hover {
+    background: #444; /* or a slightly lighter shade */
+  }
+  .demo-image {
+    margin-bottom: -13px;
+    max-width: 100%;
+  }
+}

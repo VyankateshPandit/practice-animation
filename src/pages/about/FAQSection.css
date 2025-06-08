@@ -1,0 +1,143 @@
+@media (max-width: 767.99px) {
+.faq-section {
+    padding: 40px 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .faq-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-bottom: 8px;
+  }
+  
+  .faq-subheading {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 24px;
+  }
+  
+  .faq-box {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 24px 20px;
+    text-align: left;
+  }
+  
+  .faq-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .faq-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .faq-box-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e10000; /* red */
+    margin: 0;
+  }
+  
+  .faq-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 1px; /* ← Add this for Figma-like spacing */
+    fill: #e10000;
+  }
+  
+  .faq-box-subtext {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .faq-list {
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1c1c1c;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-question .arrow {
+    transition: transform 0.2s ease;
+  }
+  
+  .faq-question .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    font-size: 13px;
+    color: #555;
+    padding-bottom: 16px;
+    line-height: 1.5;
+  }
+  
+  .see-more-button {
+    margin-top: 24px;
+    padding: 12px 24px;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 240px;
+  }
+}
+  
+  @media screen and (min-width: 768px) {
+    .faq-section {
+      padding: 60px 20px;
+    }
+  
+    .faq-heading {
+      font-size: 24px;
+    }
+  
+    .faq-subheading {
+      font-size: 16px;
+    }
+  
+    .faq-box-title {
+      font-size: 18px;
+    }
+  
+    .faq-question {
+      font-size: 16px;
+    }
+  
+    .faq-answer {
+      font-size: 14px;
+    }
+  }
+  

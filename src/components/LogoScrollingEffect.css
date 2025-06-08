@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767.99px) {
+  .university-container {
+    display: flex;
+    width: 100%;
+    padding: 36px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .university-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .university-heading {
+    color: #323232;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .university-tagline {
+    color: #5b5b5b;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .university-logos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .scrolling-images {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .logo {
+    display: flex;
+    gap: 32px;
+    width: max-content;
+    align-items: center;
+    padding: 10.5px 0px 10.498px 0px;
+  }
+
+  .items1 {
+    animation: scrollX 15s linear infinite alternate;
+  }
+
+  .items2 {
+    animation: scrollXReverse 15s linear infinite alternate;
+  }
+
+  @keyframes scrollX {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollXReverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .logo img {
+    height: 40px;
+    flex-shrink: 0;
+  }
+}

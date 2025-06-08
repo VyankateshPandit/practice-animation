@@ -1,0 +1,64 @@
+@media (max-width: 767.99px) {
+    .hero-banner{
+        display: flex;
+        width: 100%;
+        padding: 20px 16px 36px 16px;
+        align-items: center;
+        flex-shrink: 0;
+
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+        box-shadow: 0px 0.852px 5.785px 0px rgba(0, 0, 0, 0.02);
+    }
+
+    .hero-banner .card-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        flex-shrink: 0;
+    }
+
+    .hero-banner .card-content .head-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .hero-banner .card-content .head-text h1{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "GT Walsheim Trial";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px;
+    }
+
+    .hero-banner .card-content .head-text p{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .hero-banner .card-content .hero-banner-images{
+        display: flex;
+        width: 100%;
+        height: 320px;
+        padding: 5px 57.183px 5px 57px;
+        justify-content: center;
+        align-items: center;
+
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

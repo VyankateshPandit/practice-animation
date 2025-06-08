@@ -1,0 +1,92 @@
+@media (max-width: 767.99px) {
+    .map-container{
+        display: flex;
+        width: 100%;
+        padding: 36px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    }
+    
+    .map-container .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+    
+    .map-container .content h2{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 150% */
+    }
+    
+    .map-container .content p{
+        align-self: stretch;
+
+        color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .map-container .map{
+        display: flex;
+        width: 100%;
+        height: 234px;
+        padding: 8px 8px 16px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        border-radius: 12px;
+        border: 1px solid var(--Brand-Colors-White-white-600, #DADADA);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 120.09%), url(../../assets/map.svg) lightgray -223.524px -63.106px / 206.521% 166.571% no-repeat;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+
+        position: relative;
+        background-position: center;
+    }
+
+    .map-container .map svg{
+        position: absolute;
+        left: 20px;
+        top: 19.5px;
+    }
+
+    .map-container .map input{
+        display: flex;
+        padding: 10px 14px 10px 40px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+
+        border-radius: 8px;
+        border: 1px solid var(--Brand-Colors-Grey-grey-50, #EBEBEB);
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+        font-size: 16px;
+    }
+
+    .map-container .map input:focus{
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 567px) {
+    .map-container .map{
+        background-size: 115%;
+    }
+}

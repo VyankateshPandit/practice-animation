@@ -1,0 +1,184 @@
+@media (max-width: 767.99px) {
+  .awards-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 36px 16px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .awards-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .awards-header h2 {
+    align-self: stretch;
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .awards-header p {
+    align-self: stretch;
+    color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .awards-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+
+  .awards-feature {
+    display: flex;
+    width: 196px;
+    flex-direction: column;
+    align-items: center;
+    gap: -18px;
+  }
+
+  .awards-card {
+    margin-top: 16px;
+    gap: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 12px 10px 12px;
+    border-radius: 8px;
+    background: #FEFEFE;
+    font-family: Inter, sans-serif;
+    min-height: 200px;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .achievement-icon-wrapper {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .achievement-icon-inner {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    padding: 2.708px 6.5px 1.626px 6.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .achievement-icon-wrapper img {
+    width: 13px;
+    height: 21.666px;
+    flex-shrink: 0;
+  }
+
+  .awards-card h3 {
+    margin-top: 12px;
+    color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .awards-card p {
+    color: #5B5B5B;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .awards-card.pink {
+    border: 1px solid var(--Secondary-Colors-Burnt-Pink-burnt-pink-100, #ECB9CD);
+    background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    box-shadow: -4px 0px 10px 0px rgba(249, 233, 239, 0.70), 4px 4px 10px 0px rgba(249, 233, 239, 0.70);
+  }
+
+  .pink .achievement-icon-wrapper {
+    border-radius: 28px;
+    border: 6px solid var(--Secondary-Colors-Burnt-Pink-burnt-pink-50, #F9E9EF);
+    background: var(--Secondary-Colors-Burnt-Pink-burnt-pink-100, #ECB9CD);
+  }
+
+  .pink img {
+    filter: invert(23%) sepia(61%) saturate(3492%) hue-rotate(317deg) brightness(96%) contrast(88%);
+  }
+
+  .awards-card.blue {
+    border: 1px solid var(--Secondary-Colors-Eastern-Blue-eastern-blue-100, #B7DFE3);
+    background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    box-shadow: -4px 0px 10px 0px rgba(232, 245, 246, 0.70), 4px 4px 10px 0px rgba(232, 245, 246, 0.70);
+  }
+
+  .blue .achievement-icon-wrapper {
+    border: 6px solid var(--Secondary-Colors-Irish-Coffee-irish-coffee-50, #EFECEB);
+    background: var(--Secondary-Colors-Irish-Coffee-irish-coffee-100, #CDC4C1);
+  }
+
+  .blue img {
+    filter: invert(42%) sepia(89%) saturate(315%) hue-rotate(161deg) brightness(94%) contrast(91%);
+  }
+
+  .awards-card.brown {
+    border: 1px solid var(--Secondary-Colors-Irish-Coffee-irish-coffee-100, #CDC4C1);
+    background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    box-shadow: -4px 0px 10px 0px rgba(239, 236, 235, 0.70), 4px 4px 10px 0px rgba(239, 236, 235, 0.70);
+  }
+
+  .brown .achievement-icon-wrapper {
+    border: 6px solid var(--Secondary-Colors-Irish-Coffee-irish-coffee-50, #EFECEB);
+    background: var(--Secondary-Colors-Irish-Coffee-irish-coffee-100, #CDC4C1);
+  }
+
+  .brown img {
+    filter: invert(29%) sepia(19%) saturate(387%) hue-rotate(2deg) brightness(93%) contrast(88%);
+  }
+
+  .awards-card.orange {
+    border: 1px solid var(--Secondary-Colors-Pumpkin-Orange-pumpkin-orange-100, #FCD6BA);
+    background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    box-shadow: -4px 0px 10px 0px rgba(239, 236, 235, 0.70), 4px 4px 10px 0px rgba(239, 236, 235, 0.70);
+  }
+
+  .orange .achievement-icon-wrapper {
+    border: 6px solid var(--Secondary-Colors-Pumpkin-Orange-pumpkin-orange-50, #FEF2E9);
+    background: var(--Secondary-Colors-Pumpkin-Orange-pumpkin-orange-100, #FCD6BA);
+  }
+
+  .orange img {
+    filter: invert(62%) sepia(78%) saturate(550%) hue-rotate(350deg) brightness(101%) contrast(94%);
+  }
+}

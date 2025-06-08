@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767.99px) {
+  .date-display {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+
+  .calendar-wrapper {
+    position: absolute;
+    z-index: 10;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 36px 16px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .form-container .form-text-section {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    padding: 24px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+    background: var(--Brand-Colors-Primary-Red-primary-red-500, #d62d31);
+  }
+  .form-container .form-text-section .form-heading {
+    color: var(--Brand-Colors-White-white-50, #fefefe);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+  }
+  .form-container .form-text-section .form-tagline {
+    color: var(--Brand-Colors-White-white-50, #fefefe);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  .form-container .form-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    border: 2px solid var(--Brand-Colors-Grey-grey-50, #ebebeb);
+    background: var(--Brand-Colors-White-white-50, #fefefe);
+    backdrop-filter: blur(30px);
+
+    border-radius: 0 0 10px 10px !important   ; /* top-left, top-right, bottom-right, bottom-left */
+  }
+  .form-fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    position: relative;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+  }
+  .form-row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+  label {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/16px: Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .form-fields-wrapper input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+  }
+
+  .select-container input::placeholder,
+  select::placeholder,
+  option::after {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/16px: Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .date-input-container,
+  .select-container {
+    position: relative;
+  }
+
+  .calendar-icon,
+  .dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+  }
+
+  .FormDropDowns {
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    padding: 12px 10px;
+    align-items: center;
+
+    display: flex;
+    gap: 5px;
+    flex: 1 0 0 !important;
+
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/16px: Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 24px; /* 150% */
+  }
+
+  /* Phone Input Styles */
+  .phone-input-container {
+    display: flex;
+    gap: 0;
+    width: 100%;
+  }
+
+  .country-code-select {
+    padding: 12px 8px;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    width: fit-content;
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .form-group .phone-input-container .phone-number-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%; /* Override the 100% width from general input styles for this specific case */
+  }
+
+  .phone-number-input::placeholder {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: var(--Brand-Colors-Grey-grey-500, #323232);
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--Brand-Colors-White-white-50, #fefefe);
+
+    /* Inter/14px: Bold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .submit-btn:hover {
+    background-color: #333;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 12px;
+    accent-color: grey;
+  }
+
+  .checkbox-group label {
+    font-size: 12px;
+    color: #666;
+    margin-top: 12px;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+
+  .highlight {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/12px: Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/12px: Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+}

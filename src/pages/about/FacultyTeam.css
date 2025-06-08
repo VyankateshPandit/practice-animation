@@ -1,0 +1,236 @@
+@media (max-width: 767.99px) {
+.faculty-team-section {
+  width: 100%;
+  padding: 100px 40px;
+  background: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-content {
+  text-align: center;
+  max-width: 860px;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  color: #1e1e1e;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
+.faculty-team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.faculty-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px; /* reduced spacing */
+  position: relative;
+  flex-wrap: nowrap;
+  height: 220px; /* lock height to match image and info */
+}
+
+.image-wrapper,
+.info-wrapper {
+  width: 180px;
+  height: 220px; /* Force consistent height */
+  position: relative;
+  flex-shrink: 0;
+}
+
+.info-wrapper {
+  flex: 1;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+.faculty-card.align-right {
+  flex-direction: row-reverse;
+}
+
+.info-container h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 12px;
+  color: #1e1e1e;
+  line-height: 32px;
+}
+
+.info-container .role {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: #d21c1c;
+  margin-bottom: 12px;
+}
+
+.info-container .details {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  line-height: 22px;
+  font-family: 'Inter', sans-serif;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  flex-shrink: 0;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.girl-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.girl {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.clip-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.faculty-card.align-right .image-wrapper .clip-wrapper {
+  left: -12px;
+  right: auto;
+  transform: translate(-25%, -50%);
+}
+
+/*.faculty-card.align-right .clip-wrapper {
+  left: auto;
+  right: 180px;
+}*/
+
+/* Sizes */
+.ribbon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: -48px;
+}
+
+.badge {
+  width: 52px;
+  height: 52px;
+}
+
+.badge-text {
+  position: absolute;
+  top: -8px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  pointer-events: none;
+  width: 100%;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.badge-text .score {
+  font-size: 9px;
+  font-weight: 800;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.badge-text .label {
+  font-size: 2px;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+
+.info-container {
+  flex: 1;
+  max-width: 600px;
+}
+}
+
+/* ✅ Mobile Responsive Fixes */
+@media screen and (max-width: 767px) {
+  .faculty-card {
+    gap: 1px;
+  }
+
+  .faculty-card .clip-wrapper {
+    left: 180px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .faculty-card.align-right .clip-wrapper {
+    right: 180px;
+    left: auto;
+    transform: translateX(-25%) translateY(-50%);
+  }
+
+  .info-wrapper {
+    padding: 12px 16px;
+  }
+
+  .ribbon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: -45px;
+  }
+
+  .badge {
+    width: 44px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767.99px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0px 16px;
+    box-sizing: border-box;
+  }
+
+  .hero-text-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+
+  .hero-heading {
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    width: 100%;
+    font-family: "GT Walsheim Trial";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 125% */
+    letter-spacing: 0.5mm;
+  }
+
+  .hero-tagline {
+    width: 100%;
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .hero-button {
+    width: 100%;
+    max-width: 240px;
+    height: 38px;
+    padding: 8px 14px;
+    color: var(--Brand-Colors-White-white-50, #fefefe);
+    border-radius: 6px;
+    background: var(--Brand-Colors-Grey-grey-500, #323232);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .hero-button:hover {
+    background: #202020;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  .hero-img-section {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .hero-img-section .top-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+  }
+
+  .hero-img-section img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .lower-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .lower-img .lower-img2 {
+    position: relative;
+    bottom: 20px;
+  }
+}

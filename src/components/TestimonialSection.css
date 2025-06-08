@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.testimonial-section-container {
+  display: flex;
+  width: 100%;
+  padding: 36px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.stories-heading {
+  color: var(--Brand-Colors-Grey-grey-500, #323232);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.stories-tagline {
+  color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.testimonial-scroll-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.testimonial-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.testimonial-scroll-wrapper {
+  scrollbar-width: none;
+}
+
+.testimonial-cards {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+}
+
+.card1,
+.card2 {
+  flex: 0 0 auto;
+  width: 286px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.08);
+  border: 2px solid #0e0725;
+  /* No need for transitions here as Framer Motion handles them */
+}
+
+.card1 {
+  height: 100%;
+  background: linear-gradient(155deg, #fefefe 0%, #ecb9cd 136.83%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card2 {
+  height: 100%;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
+
+.profile-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  color: #323232;
+  line-height: 28px;
+}
+
+.profile-desc {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5b5b5b;
+  line-height: 20px;
+}
+
+.card-desc {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323232;
+  line-height: 20px;
+}
+
+.video-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affilated-logos {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.affilated-logos img {
+  height: 50px;
+  object-fit: contain;
+  max-width: 100px;
+}
+
+.testimonial-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-arrows .Arrow {
+  border-radius: 28px;
+  border: 1px solid #f0f0f0;
+  background: #fefefe;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 20px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Framer Motion handles the hover and disabled states */
+}
+
+@media (max-width: 767.99px) {
+}

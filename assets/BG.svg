@@ -1,0 +1,19 @@
+<svg width="161" height="100" viewBox="0 0 161 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BG">
+<g clip-path="url(#clip0_5191_44886)">
+<circle id="Ellipse 74" cx="80.5" cy="50.5" r="95.5" fill="#B7DFE3"/>
+<circle id="Ellipse 73" cx="80.5001" cy="50.5001" r="84.2647" fill="#E8F5F6"/>
+<circle id="Ellipse 72" cx="80.5001" cy="50.4999" r="73.0294" fill="#B7DFE3"/>
+<circle id="Ellipse 71" cx="81.0619" cy="51.0617" r="64.6029" fill="#E8F5F6"/>
+<circle id="Ellipse 70" cx="81.062" cy="51.0617" r="54.4912" fill="#B7DFE3"/>
+<circle id="Ellipse 69" cx="80.1423" cy="50.1425" r="44.5837" fill="#E8F5F6"/>
+<circle id="Ellipse 68" cx="80.3466" cy="50.3469" r="34.6762" fill="#B7DFE3"/>
+<circle id="Ellipse 67" cx="80.5509" cy="50.5512" r="24.7687" fill="#E8F5F6"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_5191_44886">
+<path d="M0 8C0 3.58172 3.58172 0 8 0H153C157.418 0 161 3.58172 161 8V100H0V8Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

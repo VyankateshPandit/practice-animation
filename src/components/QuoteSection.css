@@ -1,0 +1,110 @@
+@media (max-width: 767.99px) {
+    .section5 {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    gap: 20px;
+    width: 100%;
+
+    background: var(--Brand-Colors-White-white-50, #fefefe);
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+    .section5 .heading-and-text {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+    .section5 .heading-and-text .heading {
+    align-self: stretch;
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    text-align: center;
+    /* font-family: "GT-Walsheim-Black"; */
+    font-size: clamp(20px, 1.5625vw, 20px);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+  }
+
+    .section5 .heading-and-text .text {
+    /* align-self: stretch;
+      color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+      text-align: center;
+      font-family: "GT-Walsheim-Black";
+      font-size: clamp(14px, 1.09375vw, 14px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; */
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+    text-align: center;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 3.5vw, 14px);
+    line-height: clamp(18px, 5vw, 22px);
+  }
+
+    .section5 .testimonial {
+    /* display: flex;
+      height: 74.4186046511628vh;
+      align-items: flex-start;
+      gap: 16px;
+      align-self: stretch;
+      padding: 0 1.25vw; */
+    position: relative; /* Needed for absolute positioning of children */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    align-items: center;
+    /* gap: 16px; */
+    padding: 0 16px;
+  }
+
+    .section5 .testimonial .testimonial-cards {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+    .section5 .testimonial .testimonial-cards img {
+    width: 288px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+    .section5 .testimonial .arrow-wrapper {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center;
+    gap: 16px; /* Space between arrows */
+    margin-top: 16px;
+  }
+    .section5 .Arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 28px;
+    border: 1px solid var(--Brand-Colors-White-white-500, #f0f0f0);
+    background: #fefefe;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* removes mobile click highlight */
+    outline: none;
+    margin-top: 16px;
+    box-shadow: none;
+  }
+}

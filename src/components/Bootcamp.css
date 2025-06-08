@@ -1,0 +1,187 @@
+@media (max-width: 767.99px) {
+    .bootcamp{
+        display: flex;
+        width: 100%;
+        padding: 36px 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    }
+
+    .bootcamp .head-text{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .bootcamp .head-text h2{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "GT Walsheim Trial";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    
+    .bootcamp .head-text p{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    
+    .bootcamp .bootcamp-cards{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card{
+        display: flex;
+        width: 100%;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .bootcamp .bootcamp-cards .bootcamp-card1{
+        border: 2px solid var(--Sky-Gradient, #0061FF);
+        background: linear-gradient(0deg, rgba(0, 97, 255, 0.14) 15.75%, rgba(96, 239, 255, 0.14) 86.85%);
+        backdrop-filter: blur(30px);
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card2{
+        border: 2px solid #FFA585;
+        background: linear-gradient(90deg, rgba(255, 165, 133, 0.14) 0.65%, rgba(255, 237, 160, 0.14) 100%);
+        backdrop-filter: blur(30px);
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card .bootcamp-card-image{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: flex-end;
+        align-items: center;
+        flex-shrink: 0;
+
+        background-image: url(../pages/exam&visa/assets/bootcampCardImage.svg);
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card .bootcamp-card-image .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        animation-duration: 9s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card .bootcamp-card-image .image1 {
+        background-image: url(../../assets/bootcampCardImage.svg);
+        animation-name: fade1;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card .bootcamp-card-image .image2 {
+        transform: rotate(12deg);
+        background-image: url(../../assets/eventWebinarImg1.svg);
+        animation-name: fade2;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card .bootcamp-card-image .image3 {
+        background-image: url(../../assets/Subtract2.svg);
+        animation-name: fade3;
+    }
+
+    .bootcamp .bootcamp-cards .bootcamp-card .heading-and-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card p{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-300, #767676);
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card h2{
+        flex: 1 0 0;
+        color: var(--Gray-900, #101828);
+        font-family: "Inter";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    
+    .bootcamp .bootcamp-cards .bootcamp-card button{
+        display: flex;
+        width: 100%;
+        height: 38px;
+        padding: 8px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+
+        border-radius: 6px;
+        background: var(--Brand-Colors-Grey-grey-500, #323232);
+
+        color: var(--Brand-Colors-White-white-50, #FEFEFE);
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+    }
+    
+    @keyframes fade1 {
+        0%   { opacity: 0; }
+        5%   { opacity: 1; }
+        30%  { opacity: 1; }
+        35%  { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes fade2 {
+        0%   { opacity: 0; }
+        35%  { opacity: 0; }
+        40%  { opacity: 1; }
+        65%  { opacity: 1; }
+        70%  { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes fade3 {
+        0%   { opacity: 0; }
+        70%  { opacity: 0; }
+        75%  { opacity: 1; }
+        95%  { opacity: 1; }
+        100% { opacity: 0; }
+    }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 767.99px) {
+    .loa-container 
+    .canada-process 
+    .content 
+    .content-card0
+    h2{
+        color: var(--Brand-Colors-Primary-Red-primary-red-500, #D62D31);
+        font-weight: 700;
+    }
+}

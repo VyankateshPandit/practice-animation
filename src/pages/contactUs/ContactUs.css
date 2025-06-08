@@ -1,0 +1,11 @@
+@media (max-width: 767.99px) {
+    .contact-us-page{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+        padding-top: 50px;
+    }
+}

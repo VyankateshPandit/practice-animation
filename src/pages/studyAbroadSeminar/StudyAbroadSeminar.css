@@ -1,0 +1,46 @@
+@media (max-width: 767.99px) {
+    .seminar-card1{
+        border: 2px solid #FFA585;
+        background: linear-gradient(90deg, rgba(255, 165, 133, 0.14) 0.65%, rgba(255, 237, 160, 0.14) 100%);
+        backdrop-filter: blur(30px);
+    }
+
+    .seminar-card2{
+        border: 2px solid #4557F6;
+        background: linear-gradient(0deg, rgba(69, 87, 246, 0.14) 15.75%, rgba(215, 219, 255, 0.14) 86.85%);
+        backdrop-filter: blur(30px);
+    }
+
+    .seminar-card3{
+        border: 2px solid var(--Sea-Green-Gradient, #88D1D8);
+        background: linear-gradient(270deg, rgba(136, 209, 216, 0.14) 0%, rgba(200, 238, 241, 0.14) 99.54%);
+        backdrop-filter: blur(30px);
+    }
+
+    .seminar-card4{
+        border: 2px solid var(--Sky-Gradient, #0061FF);
+        background: linear-gradient(0deg, rgba(0, 97, 255, 0.14) 15.75%, rgba(96, 239, 255, 0.14) 86.85%);
+        backdrop-filter: blur(30px);
+    }
+
+    .seminar-card .content p{
+        color: var(--Brand-Colors-Grey-grey-300, #767676);
+    }
+
+    .seminar-card .content h2{
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+    }
+
+    .seminar-card .seminar-btn{
+        background: var(--Brand-Colors-Grey-grey-500, #323232);
+        color: var(--Brand-Colors-White-white-50, #FEFEFE);
+    }
+
+    .seminar .webinar-section h2{
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+    }
+
+    .seminar .webinar-section p{
+        color: var(--Brand-Colors-Grey-grey-400, #5B5B5B);
+    }
+}

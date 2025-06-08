@@ -1,0 +1,149 @@
+@media (max-width: 767.99px) {
+    .header{
+        display: flex;
+        width: 100%;
+        padding: 20px 16px 36px 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: var(--Brand-Colors-White-white-50, #FEFEFE);
+    }
+
+    .header .head-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+    
+    .header .head-text h1{
+        align-self: stretch;
+
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "GT Walsheim Trial";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px; /* 125% */
+    }
+    
+    .header .head-text p{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .header .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+    }
+
+    .header .content .email, .office, .phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+    }
+    
+    .header .content .email-image,.office-image,.phone-image{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+    }
+    
+    .header .content .email-image{
+        border: 6px solid var(--Secondary-Colors-Cyan-cyan-50, #EAF1F8);
+        background: var(--Secondary-Colors-Cyan-cyan-100, #BED4E9);
+    }
+
+    .header .content .office-image{
+        border: 6px solid var(--Secondary-Colors-Eastern-Blue-eastern-blue-50, #E8F5F6);
+        background: var(--Secondary-Colors-Eastern-Blue-eastern-blue-100, #B7DFE3);
+    }
+
+    .header .content .phone-image{
+        border: 6px solid var(--Secondary-Colors-Magenta-magenta-50, #F2EBF4);
+        background: var(--Secondary-Colors-Magenta-magenta-100, #D5BFDE);
+    
+        position: relative;
+        left: 44%;
+    }
+
+    .header .content svg{
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    .header 
+    .content 
+    .email h2, 
+    .office h2, 
+    .phone h2{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .header 
+    .content 
+    .email p, 
+    .office p, 
+    .phone p{
+        align-self: stretch;
+        color: var(--Brand-Colors-Grey-grey-300, #767676);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    .header 
+    .content 
+    .email h3, 
+    .office h3, 
+    .phone h3{
+        color: var(--Brand-Colors-Grey-grey-500, #323232);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+    }
+
+    .header .content .phone h3{
+        position: relative;
+        left: 35%;
+    }
+
+    .header 
+    .content 
+    .email h3:hover, 
+    .office h3:hover, 
+    .phone h3:hover{
+        color: purple;
+    }
+}

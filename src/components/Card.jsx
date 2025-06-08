@@ -1,46 +1,30 @@
 import React from "react";
-import { motion } from "framer-motion";
+import "../pages/studyAbroadSeminar/StudyAbroadSeminar.css";
 
-const cardVariants = {
-  custom: (custom) => {
-    if (custom.index > custom.activeIndex) {
-      return { y: "300%", transition: { duration: 0.9 } };
-    } else if (custom.index === custom.activeIndex) {
-      // Active card is centered.
-      return { y: 0, transition: { duration: 0.9 } };
-    } else {
-      const offset = (custom.activeIndex - custom.index) * 10;
-      return { y: `-${offset}px`, transition: { duration: 0.9 } };
-    }
-  },
-};
 
-const Card = ({ index, activeIndex, data, zIndex }) => {
-  return (
-    <motion.div
-      custom={{ index, activeIndex }}
-      variants={cardVariants}
-      initial={false}
-      animate="custom"
-      className="absolute w-full h-full rounded-xl flex flex-col items-center justify-center p-4 shadow-2xl backdrop-blur-md"
-      style={{
-        background: data.gradient,
-        zIndex,
-        border: "1px solid rgba(255, 255, 255, 0.3)",
-        WebkitBackdropFilter: "blur(10px)",
-        backdropFilter: "blur(10px)",
-      }}
-    >
-      <h2 className="text-xl font-bold mb-2">{data.title}</h2>
-      <p className="text-sm text-center mb-4">{data.description}</p>
-      <div className="flex justify-between w-full items-center">
-        <span className="text-lg font-bold">{data.price}</span>
-        <span className="bg-black text-white text-sm px-3 py-1 rounded-full shadow">
-          {data.duration}
-        </span>
-      </div>
-    </motion.div>
-  );
-};
+function Card(props){
+    return (
+        <div className={`seminar-card seminar-card${props.id} flex w-full py-[32px] px-[24px] flex-col justify-between items-start rounded-[12px] gap-6`}>
+            <div className="content flex flex-col items-start gap-2 self-stretch">
+                <p className="self-stretch font-inter text-sm non-italic font-medium leading-5">
+                    {props.subHeading}
+                </p>
+                <div className="icon-heading flex items-start self-stretch">
+                    <h2 className="flex-1 font-inter text-xl non-italic font-bold">
+                        {props.heading}
+                    </h2>
+                    <div className="icon flex pt-[2px] items-center gap-3">
+                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                            <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#151515" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <button type="button" className="seminar-btn flex py-[8px] px-[14px] justify-center items-center gap-[10px] self-stretch rounded-[6px] font-inter text-sm non-italic font-bold leading-5">
+                Book A Slot Now
+            </button>
+        </div>
+    )
+}
 
 export default Card;

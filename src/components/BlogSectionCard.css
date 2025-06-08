@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767.99px) {
+  .blog-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 2px solid var(--Sea-Green-Gradient, #88d1d8);
+    background: linear-gradient(133deg, #fff 1.02%, #c5e6e9 99.79%);
+    box-shadow: 2.769px 6.646px 12.837px 0px rgba(0, 0, 0, 0.04);
+  }
+  .blog-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .blog-author {
+    color: var(--Brand-Colors-Grey-grey-400, #5b5b5b);
+
+    /* Inter/12px: Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+  }
+  .blog-headingAndArrow-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .blog-card-heading {
+    color: var(--Brand-Colors-Grey-grey-500, #323232);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .blog-arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .blog-card-badges {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .blog-card-badge-1 {
+    display: flex;
+    padding: 2px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--Secondary-Colors-Flat-Green-flat-green-50, #fef2e9);
+    color: var(--Secondary-Colors-Pumpkin-Orange-pumpkin-orange-500, #f57b1f);
+    text-align: center;
+
+    /* Inter/14px: Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+  }
+  .blog-card-badge-2 {
+    display: flex;
+    padding: 2px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--Secondary-Colors-Flat-Green-flat-green-50, #f0f6ec);
+    color: var(--Secondary-Colors-Flat-Green-flat-green-500, #69a042);
+    text-align: center;
+
+    /* Inter/14px: Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+  }
+}
