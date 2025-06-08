@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import avatar0 from "../../assets/avatar0.svg";
-import avatar1 from "../../assets/avatar1.svg";
-import avatar2 from "../../assets/avatar2.svg";
-import avatar3 from "../../assets/avatar3.svg";
-import avatar4 from "../../assets/avatar4.svg";
-import avatar5 from "../../assets/avatar5.svg";
-import avatar6 from "../../assets/avatar6.svg";
+import avatar0 from "../../assets/Avatar0.svg";
+import avatar1 from "../../assets/Avatar1.svg";
+import avatar2 from "../../assets/Avatar2.svg";
+import avatar3 from "../../assets/Avatar3.svg";
+import avatar4 from "../../assets/Avatar4.svg";
+import avatar5 from "../../assets/Avatar5.svg";
+import avatar6 from "../../assets/Avatar6.svg";
 import RotatingTextFrame from "../../assets/Rotating-Text-Frame.svg";
 
 function ImageFooterAnimation() {
