@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import eeclogo from "../../assets/eeclogo.svg";
 import girlsimage from "../../assets/grilsimage.png";
 const Sidebar = () => {
   const [isCourseOpen, setIsCourseOpen] = useState(false);
@@ -97,19 +96,36 @@ const Sidebar = () => {
               </div>
               {isCourseOpen && (
                 <div className="mt-2 ml-4 space-y-1">
-                  {["IELTS", "TOEFL", "GMAT GRE", "PTE", "SAT"].map(
-                    (sub, i) => (
-                      <a
-                        key={i}
-                        href={`/course/${sub
-                          .toLowerCase()
-                          .replace(/\s/g, "-")}`}
-                        className="block text-[#555] text-sm hover:text-black"
-                      >
-                        {sub}
-                      </a>
-                    )
-                  )}
+                  <a
+                    href="/course"
+                    className="block text-[#555] text-sm hover:text-black"
+                  >
+                    IELTS
+                  </a>
+                  <a
+                    href="/course"
+                    className="block text-[#555] text-sm hover:text-black"
+                  >
+                    TOEFL
+                  </a>
+                  <a
+                    href="/course"
+                    className="block text-[#555] text-sm hover:text-black"
+                  >
+                    GMAT
+                  </a>
+                  <a
+                    href="/course"
+                    className="block text-[#555] text-sm hover:text-black"
+                  >
+                    PTE
+                  </a>
+                  <a
+                    href="/course"
+                    className="block text-[#555] text-sm hover:text-black"
+                  >
+                    SAT
+                  </a>
                 </div>
               )}
             </div>
